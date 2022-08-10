@@ -23,7 +23,7 @@ const sortFolder = async (readFolder, gender, writeFolder) => {
 }
 
 // sortFolder('boys', 'male', 'girls');
-sortFolder('girls', 'female', 'boys');
+// sortFolder('girls', 'female', 'boys');
 
 
 
