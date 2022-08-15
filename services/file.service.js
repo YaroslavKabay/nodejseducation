@@ -7,10 +7,6 @@ const pathToFile = path.join(process.cwd(),'dataBase', 'users.json');
 const reader = async () => {
 
     try{
-        // const data = await fs.readFile(pathToFile);
-        // const users = JSON.parse(data.toString());
-        // return users? users.sort((a, b) => a.id - b.id): [];
-
         const buffer = await fs.readFile(pathToFile);
         const data = buffer.toString();
 
@@ -36,6 +32,17 @@ const writer = async (users) => {
 
 module.exports = {
 
+    getUsers:  () => {
+        return reader();
+
+    },
+
+    getOneUser: async (id) => {
+        const users = await reader();
+
+        return users.find((user) => user.id === id);
+    },
+
     insertUser: async (userObject) => {
         const users = await reader();
 
@@ -46,13 +53,20 @@ module.exports = {
 
         return userObject;
 
-
     },
+    deleteOneUser: async (id) => {
+            const users = await reader();
 
-    getUsers:  () => {
-        return reader();
+            const index = users.findIndex((user) => user.id === id);
 
-    }
+            if (index < 0) return;
+
+            const user = users[index];
+            users.splice(index, 1);
+
+            await writer(users);
+            return user;
+        }
 }
 
 

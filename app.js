@@ -18,7 +18,20 @@ app.get('/users', async (req,res) => {
     res.json(usersFromService);
 })
 
-app.get('/users/:userId', (req,res) => {
+app.post('/users', async (req, res) => {
+    const { age, name } = req.body;
+
+    if (Number.isNaN(+age) || age <= 0) {
+        res.status(400).json('Wrong user age');
+        return;
+    }
+
+    const user = await fileService.insertUser({ age, name });
+
+    res.status(201).json(user);
+});
+
+app.get('/users/:userId', async (req,res) => {
 
     const {userId} = req.params;
 
@@ -27,7 +40,7 @@ app.get('/users/:userId', (req,res) => {
         return;
     }
 
-    const user = users[userId];
+    const user = await fileService.getOneUser(+userId);
     if (!user) {
         res.status(400).json('User not found');
         return;
@@ -35,6 +48,25 @@ app.get('/users/:userId', (req,res) => {
 
     res.json(user);
 })
+
+app.delete('/users/:userId', async (req, res) => {
+    const { userId } = req.params;
+
+    if (Number.isNaN(+userId) || +userId < 0) {
+        res.status(400).json('Wrong user id');
+        return;
+    }
+
+    const user = await fileService.deleteOneUser(+userId);
+
+    if (!user) {
+        res.status(404).json('User not found');
+        return;
+    }
+
+    res.json('OK');
+    res.sendStatus(204);
+});
 
 
 // app.delete('/users/:userId', (req, res) => {
@@ -52,32 +84,8 @@ app.get('/users/:userId', (req,res) => {
 // });
 //
 
-// app.post('/users', (req,res) => {
-//     const {username, password} = req.body;
-//     console.log( 'username:', username)
-//     console.log( 'password:', password)
-//
-//     if (Number.isNaN(+password) || +password<0) {
-//         res.status(400).json('Wrong username');
-//         return;
-//     }
-//     users.push({password, username})
-//
-//     res.status(201).json('ok');
-// })
 
-app.post('/users', async (req, res) => {
-    const { age, name } = req.body;
 
-    if (Number.isNaN(+age) || age <= 0) {
-        res.status(400).json('Wrong user age');
-        return;
-    }
-
-    const user = await fileService.insertUser({ age, name });
-
-    res.status(201).json(user);
-});
 
 
 
