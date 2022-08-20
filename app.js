@@ -5,6 +5,7 @@ const fileService = require('./services/file.service');
 
 const userController = require('./controllers/user.controller')
 const userRoute = require('./routes/user.route')
+const {mainErrorHandler} = require("./errors");
 
 
 const app = express();
@@ -17,17 +18,12 @@ app.get('/', (req,res) => {
 })
 
 app.use('/users', userRoute);
-//
-// app.get('/users', userController.getAllUsers)
-//
-// app.post('/users', userController.createUser );
-//
-// app.get('/users/:userId', userController.getUserByID )
-//
-// app.delete('/users/:userId', userController.deleteUserById );
-//
-// app.put('/users/:userId', userController.updateUserByID );
 
+app.use('*', (req, res, next)=>{
+    next (new Error('Route not found'))
+})
+
+app.use(mainErrorHandler)
 
 app.listen(3000, () =>{
     console.log('App listen 3000')
