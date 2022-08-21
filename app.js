@@ -1,11 +1,14 @@
 const express = require('express');
-const users = require('./dataBase');
+require('dotenv').config()
+
+const mongoose = require('mongoose');
 
 const fileService = require('./services/file.service');
-
 const userController = require('./controllers/user.controller')
 const userRoute = require('./routes/user.route')
-const {mainErrorHandler} = require("./errors");
+const { PORT, MONGO_URL} = require('./configs/config')
+const { mainErrorHandler } = require("./errors");
+
 
 
 const app = express();
@@ -25,8 +28,9 @@ app.use('*', (req, res, next)=>{
 
 app.use(mainErrorHandler)
 
-app.listen(3000, () =>{
-    console.log('App listen 3000')
+app.listen(PORT, () =>{
+    console.log('App listen', PORT)
+    mongoose.connect(MONGO_URL);
 });
 
 
