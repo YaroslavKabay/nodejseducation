@@ -1,4 +1,6 @@
 const {ApiError} = require('../errors');
+const {userService} = require("../services");
+const {statusCodes} = require("../constants");
 
 module.exports = {
     checkIfUserBodyIsValid : async (req,res,next) => {
@@ -6,17 +8,56 @@ module.exports = {
             const { age, name } = req.body;
 
             if (Number.isNaN(+age) || age <= 0) {
-                throw new ApiError('Wrong user age', 400 )
+                return next (new ApiError('Wrong user age', statusCodes.BAD_REQUEST ));
 
             }
             if (name.length < 2) {
-                throw new ApiError('Wrong user name', 400 )
+                return next (new ApiError('Wrong user name', statusCodes.BAD_REQUEST ));
 
             }
             next();
-            
+
+        }catch (e) {
+            next(e);
+        }
+    },
+
+    checkIfUserEmailIsUniq : async (req,res,next) => {
+
+        try {
+            const {email} = req.body;
+            const {userId} = req.params;
+
+            const userByEmail = await userService.getOneByParams({email});
+
+
+            if (userByEmail && userByEmail._id.toString() !== userId) {
+              return next(new ApiError('The email already exist', statusCodes.CONFLICT ))
+
+            }
+            next();
+
+        }catch (e) {
+            next(e);
+        }
+    },
+
+    checkIfUserPresent : async (req,res,next) => {
+
+        try {
+            const { userId } = req.params;
+            const user = await userService.getOneById(userId);
+
+            if (!user) {
+                return next(new ApiError('User not found', statusCodes.BAD_REQUEST ))
+
+            }
+            req.user = user;
+            next();
+
         }catch (e) {
             next(e);
         }
     }
+
 }

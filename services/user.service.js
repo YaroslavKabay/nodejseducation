@@ -5,8 +5,24 @@ module.exports = {
         return User.create(userObject);
     },
 
-    updateUserByID(userId, newUserObject){
-        return User.updateOne({_id:userId}, newUserObject, {new: true})
+    getAllUsers(filter = {}) {
+        return User.find(filter);
+    },
+
+    getOneByParams(filter, newUserObject){
+        return User.findOne(filter)
+    },
+
+    getOneById(id){
+        return User.findById(id)
+    },
+
+    // updateUserByID(userId, newUserObject){
+    //     return User.updateOne({_id:userId}, newUserObject, {new: true})
+    // },
+
+    updateUserByID(userId, newUserObject) {
+        return User.findOneAndUpdate({ _id: userId }, newUserObject, { new: true });
     },
 
     deleteUserById(userId){

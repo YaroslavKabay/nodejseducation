@@ -1,11 +1,9 @@
 const express = require('express');
 require('dotenv').config()
-
 const mongoose = require('mongoose');
 
-const fileService = require('./services/file.service');
-const userController = require('./controllers/user.controller')
-const userRoute = require('./routes/user.route')
+
+const {userRoute} = require('./routes')
 const { PORT, MONGO_URL} = require('./configs/config')
 const { mainErrorHandler } = require("./errors");
 
