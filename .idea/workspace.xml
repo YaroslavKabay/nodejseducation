@@ -2,21 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91c58b8f-cc94-4a45-8394-98d7cb0b332f" name="Changes" comment="hw4">
-      <change afterPath="$PROJECT_DIR$/constants/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/constants/statusCode.enum.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middlewares/common.middleware.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middlewares/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/constants/constant.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/constants/regex.enum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/constants/tokenType.enum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/auth.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/car.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataBase/Auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataBase/Car.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataBase/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/auth.middleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/car.middleware.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/auth.service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/car.service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/token.service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/validators/common.validators.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/validators/user.validators.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/configs/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/users.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/constants/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/dataBase/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/common.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/common.middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlewares/user.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/user.middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/car.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/car.router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/user.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/file.service.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/user.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/user.service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,17 +64,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "16.15.1",
-    "javascript.nodejs.core.library.typings.version": "16.11.51",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.15.1&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.11.51&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -79,7 +92,8 @@
       <workItem from="1660984486497" duration="6167000" />
       <workItem from="1660998136685" duration="2331000" />
       <workItem from="1661070903752" duration="5593000" />
-      <workItem from="1661330863249" duration="12682000" />
+      <workItem from="1661330863249" duration="15845000" />
+      <workItem from="1661526671184" duration="10982000" />
     </task>
     <task id="LOCAL-00001" summary="hw1">
       <created>1660203107758</created>
@@ -144,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661076861935</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="hw4">
+      <created>1661437803533</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1661437803534</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
