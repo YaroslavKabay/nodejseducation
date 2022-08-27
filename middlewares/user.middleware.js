@@ -1,6 +1,8 @@
 const {ApiError} = require('../errors');
 const {userService} = require("../services");
 const {statusCodes} = require("../constants");
+const {User} = require("../dataBase");
+
 
 module.exports = {
     checkIfUserBodyIsValid : async (req,res,next) => {
@@ -57,7 +59,48 @@ module.exports = {
             } catch (e) {
                 next(e);
             }
+        },
+    // getUserDynamicaly: (from = 'body', filedName = 'userId', dbField = filedName) => {
+    //     return async function (req, res, next) {
+    //         console.log(from, 'FROM')
+    //         console.log(filedName, 'filedName')
+    //         console.log(dbField, 'dbField')
+    //         try {
+    //             const filedToSearch = req[from][filedName];
+    //
+    //             console.log(filedToSearch, 'filedToSearch');
+    //
+    //             const user = await User.findOne({ [dbField]: filedToSearch })
+    //
+    //             if (!user) {
+    //                 return next(new ApiError('User not found', statusCodes.NOT_FOUND));
+    //             }
+    //
+    //             req.user = user;
+    //             next();
+    //         } catch (e) {
+    //             next(e);
+    //         }
+    //     }
+    // },
+    getUserDynamicaly: (from = 'body', filedName = 'userId', dbField = filedName) => {
+        return async function (req, res, next) {
+            try {
+                const filedToSearch = req[from][filedName];
+
+                const user = await User.findOne({ [dbField]: filedToSearch })
+
+                if (!user) {
+                    return next(new ApiError('User not found', statusCodes.NOT_FOUND));
+                }
+
+                req.user = user;
+                next();
+            } catch (e) {
+                next(e);
+            }
         }
+    }
 }
 
 
@@ -121,22 +164,5 @@ module.exports = {
 //         }
 //     },
 //
-//     getUserDynamicaly: (from = 'body', filedName = 'userId', dbField = filedName) => {
-//         return async function (req, res, next) {
-//             try {
-//                 const filedToSearch = req[from][filedName];
-//
-//                 const user = await User.findOne({ [dbField]: filedToSearch })
-//
-//                 if (!user) {
-//                     return next(new ApiError('User not found', statusCodes.NOT_FOUND));
-//                 }
-//
-//                 req.user = user;
-//                 next();
-//             } catch (e) {
-//                 next(e);
-//             }
-//         }
-//     }
+
 // }

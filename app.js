@@ -3,7 +3,7 @@ require('dotenv').config()
 const mongoose = require('mongoose');
 
 
-const {userRoute,carRoute} = require('./routes')
+const {authRoute, userRoute, carRoute} = require('./routes')
 const { PORT, MONGO_URL} = require('./configs/config')
 const { mainErrorHandler } = require("./errors");
 
@@ -18,6 +18,7 @@ app.get('/', (req,res) => {
     res.json("hello")
 })
 
+app.use('/auth', authRoute);
 app.use('/users', userRoute);
 app.use('/cars', carRoute);
 
