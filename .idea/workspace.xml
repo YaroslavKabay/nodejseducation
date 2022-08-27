@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91c58b8f-cc94-4a45-8394-98d7cb0b332f" name="Changes" comment="hw4">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/constant.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/constants/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/regex.enum.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/tokenType.enum.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/auth.controller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/car.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/car.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Auth.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Car.js" beforeDir="false" afterPath="$PROJECT_DIR$/dataBase/Car.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/dataBase/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dataBase/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/auth.middleware.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/car.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/car.middleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/common.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/common.middleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/user.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/user.middleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/car.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/car.router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/user.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth.service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/car.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/car.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/token.service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/user.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/user.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validators/common.validators.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/validators/user.validators.js" beforeDir="false" />
-    </list>
+    <list default="true" id="91c58b8f-cc94-4a45-8394-98d7cb0b332f" name="Changes" comment="hw4 final" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +63,7 @@
       <workItem from="1660998136685" duration="2331000" />
       <workItem from="1661070903752" duration="5593000" />
       <workItem from="1661330863249" duration="15845000" />
-      <workItem from="1661526671184" duration="11730000" />
+      <workItem from="1661526671184" duration="11833000" />
     </task>
     <task id="LOCAL-00001" summary="hw1">
       <created>1660203107758</created>
@@ -169,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661538270090</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="hw4 final">
+      <created>1661539079663</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1661539079663</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +171,7 @@
     <MESSAGE value="hw2" />
     <MESSAGE value="hw3" />
     <MESSAGE value="hw4" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw4" />
+    <MESSAGE value="hw4 final" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw4 final" />
   </component>
 </project>
