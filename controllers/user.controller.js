@@ -1,5 +1,5 @@
 const { statusCodes } = require('../constants');
-const {userService, authService, tokenService} = require("../services");
+const {userService, tokenService} = require("../services");
 
 module.exports={
 
