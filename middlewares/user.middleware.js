@@ -2,21 +2,20 @@ const {ApiError} = require('../errors');
 const {userService} = require("../services");
 const {statusCodes} = require("../constants");
 const {User} = require("../dataBase");
+const userValidators = require('../validators/user.validators')
 
 
 module.exports = {
     checkIfUserBodyIsValid : async (req,res,next) => {
         try {
-            const { age, name } = req.body;
 
-            if (Number.isNaN(+age) || age <= 0) {
-                return next (new ApiError('Wrong user age', statusCodes.BAD_REQUEST ));
+            const validate = userValidators.newUserValidator.validate(req.body);
 
+            if(validate.error){
+
+                return next(new ApiError(validate.error.message, statusCodes.BAD_REQUEST))
             }
-            if (name.length < 2) {
-                return next (new ApiError('Wrong user name', statusCodes.BAD_REQUEST ));
 
-            }
             next();
 
         }catch (e) {
@@ -24,25 +23,24 @@ module.exports = {
         }
     },
 
-    checkIfUserEmailIsUniq : async (req,res,next) => {
 
+    checkIfUserEmailIsUniq: async (req, res, next) => {
         try {
-            const {email} = req.body;
-            const {userId} = req.params;
+            const { email } = req.body;
+            const { userId } = req.params;
 
-            const userByEmail = await userService.getOneByParams({email});
+            const userByEmail = await userService.getOneByParams({ email, _id: { $ne: userId } });
 
-
-            if (userByEmail && userByEmail._id.toString() !== userId) {
-              return next(new ApiError('The email already exist', statusCodes.CONFLICT ))
-
+            if (userByEmail) {
+                return next(new ApiError('User with this email is exist', statusCodes.CONFLICT));
             }
-            next();
 
-        }catch (e) {
+            next();
+        } catch (e) {
             next(e);
         }
     },
+
 
     checkIfUserPresent: (from = 'params') => async function (req, res, next) {
             try {

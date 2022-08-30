@@ -21,19 +21,19 @@ module.exports = {
             next(e);
         }
     },
-    //
-    // logout: async (req, res, next) => {
-    //     try {
-    //         const { user, access_token } = req.tokenInfo;
-    //
-    //         await authService.deleteOneByParams({user: user._id, access_token});
-    //
-    //         res.sendStatus(NO_CONTENT);
-    //     } catch (e) {
-    //         next(e);
-    //     }
-    // },
-    //
+
+    logout: async (req, res, next) => {
+        try {
+            const { user, access_token } = req.tokenInfo;
+
+            await authService.deleteOneByParams({user: user._id, access_token});
+
+            res.sendStatus(NO_CONTENT);
+        } catch (e) {
+            next(e);
+        }
+    },
+
     refresh: async (req, res, next) => {
         try {
             const { user, refresh_token } = req.tokenInfo;
