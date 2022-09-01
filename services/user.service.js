@@ -1,55 +1,28 @@
 const User = require('../dataBase/User');
 
 module.exports = {
-    createUser(userObject){
-        return User.create(userObject);
-    },
+  createUser(userObject){
+    return User.create(userObject);
+  },
 
-    getAllUsers(filter = {}) {
-        return User.find(filter);
-    },
+  getAllUsers(filter = {}) {
+    return User.find(filter);
+  },
 
-    getOneByParams(filter, newUserObject){
-        return User.findOne(filter)
-    },
+  getOneByParams(filter){
+    return User.findOne(filter);
+  },
 
-    getOneById(id){
-        return User.findById(id).select(['+cars']).populate('cars')
-    },
+  getOneById(id){
+    return User.findById(id).select(['+cars'])
+      .populate('cars');
+  },
 
-    updateUserByID(userId, newUserObject) {
-        return User.findOneAndUpdate({ _id: userId }, newUserObject, { new: true });
-    },
+  updateUserByID(userId, newUserObject) {
+    return User.findOneAndUpdate({ _id: userId }, newUserObject, { new: true });
+  },
 
-    deleteUserById(userId){
-        return User.deleteOne({_id:userId})
-    }
-}
-
-// const User = require('../dataBase/User')
-//
-// module.exports = {
-//     createUser(userObject) {
-//         return User.create(userObject);
-//     },
-//
-//     getAllUsers(filter = {}) {
-//         return User.find(filter);
-//     },
-//
-//     getOneByParams(filter) {
-//         return User.findOne(filter);
-//     },
-//
-//     getOneById(id) {
-//         return User.findById(id).select(['+cars']).populate('cars');
-//     },
-//
-//     updateUserById(userId, newUserObject) {
-//         return User.findOneAndUpdate({ _id: userId }, newUserObject, { new: true });
-//     },
-//
-//     deleteUserById(userId) {
-//         return User.deleteOne({ _id: userId });
-//     }
-// }
+  deleteUserById(userId){
+    return User.deleteOne({_id:userId});
+  }
+};

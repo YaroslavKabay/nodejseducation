@@ -1,64 +1,64 @@
 const { statusCodes } = require('../constants');
-const {userService, authService, tokenService} = require("../services");
+const {userService, tokenService} = require('../services');
 
 module.exports={
 
-    getAllUsers: async (req, res, next) => {
-        try {
-            const users = await userService.getAllUsers();
+  getAllUsers: async (req, res, next) => {
+    try {
+      const users = await userService.getAllUsers();
 
-            res.json(users);
-        } catch (e) {
-            next(e);
-        }
-    },
+      res.json(users);
+    } catch (e) {
+      next(e);
+    }
+  },
 
-    getUserByID: async (req, res, next) => {
-        try {
-            const { user } = req;
+  getUserByID: (req, res, next) => {
+    try {
+      const { user } = req;
 
-            res.json(user);
-        } catch (e) {
-            next(e);
-        }
-    },
+      res.json(user);
+    } catch (e) {
+      next(e);
+    }
+  },
 
-    createUser: async (req, res, next) => {
-        try{
-            const hashPassword = await tokenService.hashPassword(req.body.password)
-            const user = await userService.createUser({...req.body, password: hashPassword});
-            res.status(statusCodes.CREATE).json(user);
+  createUser: async (req, res, next) => {
+    try{
+      const hashPassword = await tokenService.hashPassword(req.body.password);
+      const user = await userService.createUser({...req.body, password: hashPassword});
+      res.status(statusCodes.CREATE).json(user);
 
-        } catch (e) {
-            next(e);
-        }
-    },
+    } catch (e) {
+      next(e);
+    }
+  },
 
-    deleteUserById: async (req, res, next) => {
-        try{
+  deleteUserById: async (req, res, next) => {
+    try{
 
-            const { userId } = req.params;
-
-
-            await userService.deleteUserById(userId);
+      const { userId } = req.params;
 
 
-            res.sendStatus(statusCodes.NO_CONTENT);
+      await userService.deleteUserById(userId);
 
-        } catch (e) {
-            next(e);
-        }
-    },
 
-    updateUserByID: async (req, res, next) => {
-        try {
-            const { userId } = req.params;
+      res.sendStatus(statusCodes.NO_CONTENT);
 
-            const user = await userService.updateUserByID(userId, req.body);
+    } catch (e) {
+      next(e);
+    }
+  },
 
-            res.json(user);
-        } catch (e) {
-            next(e);
-        }
-    },
-}
+  updateUserByID: async (req, res, next) => {
+    try {
+      const { userId } = req.params;
+
+      const user = await userService.updateUserByID(userId, req.body);
+
+      res.json(user);
+    } catch (e) {
+      next(e);
+    }
+  },
+};
