@@ -6,4 +6,8 @@ module.exports = {
 
   ACCESS_TOKEN_LIFETIME : process.env.ACCESS_TOKEN_LIFETIME || '5m',
   REFRESH_TOKEN_LIFETIME : process.env.REFRESH_TOKEN_LIFETIME || '5m',
+
+  NO_REPLY_EMAIL: process.env.NO_REPLY_EMAIL || 'example@email.com',
+  NO_REPLY_PASSWORD: process.env.NO_REPLY_PASSWORD || 'email password',
+
 };
