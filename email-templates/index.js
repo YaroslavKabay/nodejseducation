@@ -1,14 +1,3 @@
-// module.exports = {
-//     welcome: {
-//         subject: 'Welcome',
-//         templateName : 'welcome'
-//     },
-//     orderArrived: {
-//         subject: 'ORDER ARR',
-//         html: 'order_arrived'
-//     }
-// };
-
 const { emailActionEnum } = require('../constants');
 
 module.exports = {

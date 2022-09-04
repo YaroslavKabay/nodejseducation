@@ -1,5 +1,4 @@
 const { authService, tokenService } = require('../services');
-// const { NO_CONTENT } = require('../constants/statusCode.enum');
 const { statusCodes: { NO_CONTENT }, emailActionEnum } = require('../constants');
 const {sendEmail} = require('../services/email.service');
 
