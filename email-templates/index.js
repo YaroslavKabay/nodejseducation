@@ -1,10 +1,29 @@
+// module.exports = {
+//     welcome: {
+//         subject: 'Welcome',
+//         templateName : 'welcome'
+//     },
+//     orderArrived: {
+//         subject: 'ORDER ARR',
+//         html: 'order_arrived'
+//     }
+// };
+
+const { emailActionEnum } = require('../constants');
+
 module.exports = {
-    welcome: {
-        subject: 'Welcome',
-        html: '<h1>Welcome</h1>'
+    [emailActionEnum.WELCOME]: {
+        subject: 'WELCOME',
+        templateName: 'welcome'
     },
-    orderArrived: {
-        subject: 'orderArrived',
-        html: '<h1>orderArrived 2 U </h1>'
+
+    [emailActionEnum.ORDER_ARRIVED]: {
+        subject: 'OREDR ARR',
+        templateName: 'order_arrived'
+    },
+
+    [emailActionEnum.FORGOT_PASSWORD]: {
+        subject: 'Opps. Dont wory',
+        templateName: 'forgot-pass'
     }
 };

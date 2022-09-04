@@ -1,12 +1,13 @@
 const { authService, tokenService } = require('../services');
-const { NO_CONTENT } = require('../constants/statusCode.enum');
+// const { NO_CONTENT } = require('../constants/statusCode.enum');
+const { statusCodes: { NO_CONTENT }, emailActionEnum } = require('../constants');
 const {sendEmail} = require('../services/email.service');
 
 module.exports = {
   login: async (req, res, next) => {
     try {
       const { password, email } = req.body;
-      const { password: hashPassword, _id } = req.user;
+      const { password: hashPassword, _id, name } = req.user;
 
       await tokenService.comparePasswords(password, hashPassword);
 
@@ -14,7 +15,7 @@ module.exports = {
 
       await authService.saveTokens({ ...authTokens, user: _id });
 
-      await sendEmail(email, 'orderArrived');
+      await sendEmail(email, emailActionEnum.WELCOME, {userName: name});
 
       res.json({
         ...authTokens,

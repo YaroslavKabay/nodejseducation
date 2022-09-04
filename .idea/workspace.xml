@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91c58b8f-cc94-4a45-8394-98d7cb0b332f" name="Changes" comment="hw6 final">
-      <change afterPath="$PROJECT_DIR$/email-templates/container.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/email-templates/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/email.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+    <list default="true" id="91c58b8f-cc94-4a45-8394-98d7cb0b332f" name="Changes" comment="hw7">
+      <change afterPath="$PROJECT_DIR$/constants/emailAction.enum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-templates/forgot_pass.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-templates/order_arrived.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-templates/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/email-templates/welcome.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configs/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/configs/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/constants/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/email-templates/container.pug" beforeDir="false" afterPath="$PROJECT_DIR$/email-templates/container.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/email-templates/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/email-templates/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/email.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/email.service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +23,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -32,7 +37,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.env" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/configs/config.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/constants/index.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/constants/statusCode.enum.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/constants/tokenType.enum.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/controllers/auth.controller.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/email-templates/container.pug" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/email-templates/index.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/email-templates/style.css" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/services/email.service.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -50,6 +65,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.15.1&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.11.51&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -100,7 +116,8 @@
       <workItem from="1661756586749" duration="4783000" />
       <workItem from="1661778840600" duration="13332000" />
       <workItem from="1662022852725" duration="7977000" />
-      <workItem from="1662137580938" duration="10582000" />
+      <workItem from="1662137580938" duration="10635000" />
+      <workItem from="1662199132382" duration="3715000" />
     </task>
     <task id="LOCAL-00001" summary="hw1">
       <created>1660203107758</created>
@@ -200,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662137614233</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="hw7">
+      <created>1662153556889</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1662153556890</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +249,8 @@
     <MESSAGE value="hw5 start" />
     <MESSAGE value="hw5 part one" />
     <MESSAGE value="hw6 final" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw6 final" />
+    <MESSAGE value="hw7" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw7" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
