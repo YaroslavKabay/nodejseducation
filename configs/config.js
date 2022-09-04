@@ -12,5 +12,6 @@ module.exports = {
 
   FRONTEND_URL: process.env.FRONTEND_URL || 'example.com',
 
+  ACTION_TOKEN_SECRET: process.env.ACTION_TOKEN_SECRET || 'A_T_S'
 
 };
