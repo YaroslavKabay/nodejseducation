@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91c58b8f-cc94-4a45-8394-98d7cb0b332f" name="Changes" comment="hw7">
-      <change afterPath="$PROJECT_DIR$/dataBase/ActionTokens.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/actionToken.service.js" afterDir="false" />
+    <list default="true" id="91c58b8f-cc94-4a45-8394-98d7cb0b332f" name="Changes" comment="hw8">
+      <change afterPath="$PROJECT_DIR$/dataBase/PreviousPassword.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/previousPassword.service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/configs/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/tokenType.enum.js" beforeDir="false" afterPath="$PROJECT_DIR$/constants/tokenType.enum.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/dataBase/Auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataBase/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dataBase/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/email-templates/forgot_pass.pug" beforeDir="false" afterPath="$PROJECT_DIR$/email-templates/forgot-pass.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlewares/auth.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/auth.middleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/auth.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth.service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/token.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/token.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validators/user.validators.js" beforeDir="false" afterPath="$PROJECT_DIR$/validators/user.validators.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +115,7 @@
       <workItem from="1662022852725" duration="7977000" />
       <workItem from="1662137580938" duration="10635000" />
       <workItem from="1662199132382" duration="3715000" />
+      <workItem from="1662375729319" duration="5334000" />
     </task>
     <task id="LOCAL-00001" summary="hw1">
       <created>1660203107758</created>
@@ -226,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662153556890</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="hw8">
+      <created>1662288749029</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1662288749029</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +256,8 @@
     <MESSAGE value="hw6 final" />
     <MESSAGE value="hw7" />
     <MESSAGE value="hw7 final" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw7 final" />
+    <MESSAGE value="hw8" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw8" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
