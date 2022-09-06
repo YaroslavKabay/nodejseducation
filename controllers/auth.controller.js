@@ -9,13 +9,14 @@ const {
   previousPasswordService
 } = require('../services');
 
+
 module.exports = {
     login: async (req, res, next) => {
         try {
             const { password, email } = req.body;
-            const { password: hashPassword, _id, name } = req.user;
+            const { _id, name } = req.user;
 
-            await tokenService.comparePasswords(password, hashPassword);
+            await req.user.checkIsPasswordSame(password);
 
             const authTokens = tokenService.createAuthTokens({_id});
 

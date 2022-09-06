@@ -1,9 +1,6 @@
 const User = require('../dataBase/User');
 
 module.exports = {
-  createUser(userObject){
-    return User.create(userObject);
-  },
 
   getAllUsers(filter = {}) {
     return User.find(filter);

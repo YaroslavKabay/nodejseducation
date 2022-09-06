@@ -1,5 +1,6 @@
 const { statusCodes } = require('../constants');
-const {userService, tokenService} = require('../services');
+const {userService} = require('../services');
+const {User} = require('../dataBase');
 
 module.exports={
 
@@ -25,8 +26,9 @@ module.exports={
 
   createUser: async (req, res, next) => {
     try{
-      const hashPassword = await tokenService.hashPassword(req.body.password);
-      const user = await userService.createUser({...req.body, password: hashPassword});
+      // const hashPassword = await tokenService.hashPassword(req.body.password);
+      // const user = await userService.createUser({...req.body, password: hashPassword});
+      const user = await User.createUserWithHashPassword(req.body);
       res.status(statusCodes.CREATE).json(user);
 
     } catch (e) {
