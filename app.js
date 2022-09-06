@@ -1,14 +1,18 @@
 const express = require('express');
 require('dotenv').config();
 const mongoose = require('mongoose');
+const morgan = require('morgan');
 
 
 const {authRoute, userRoute, carRoute} = require('./routes');
 const { PORT, MONGO_URL} = require('./configs/config');
+const runCronJobs = require('./cron');
 const { mainErrorHandler } = require('./errors');
 
 
 const app = express();
+
+app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
@@ -31,9 +35,7 @@ app.use(mainErrorHandler);
 app.listen(PORT, () =>{
   console.log('App listen', PORT);
   mongoose.connect(MONGO_URL);
+
+  runCronJobs();
 });
-
-
-
-
 
