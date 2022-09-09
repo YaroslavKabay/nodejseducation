@@ -1,4 +1,6 @@
 module.exports = {
+  NODE_ENV: process.env.NODE_ENV || 'production',
+
   PORT: process.env.PORT || 5000,
   MONGO_URL: process.env.MONGO_URL || 'mongodb+srv://YaroslavKabay:YaroslavKabay@cluster0.7mmv4jz.mongodb.net/nodeEdu?retryWrites=true&w=majority',
   ACCESS_SECRET_WORD: process.env.MONGO_URL || 'ACCESS_SECRET_WORD',
