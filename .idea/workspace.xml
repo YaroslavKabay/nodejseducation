@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91c58b8f-cc94-4a45-8394-98d7cb0b332f" name="Changes" comment="lecture">
-      <change afterPath="$PROJECT_DIR$/cron/removeOldPassword.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/environments/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="91c58b8f-cc94-4a45-8394-98d7cb0b332f" name="Changes" comment="hw 9 final">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/configs/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cron/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/cron/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cron/removeOltAuthTokens.js" beforeDir="false" afterPath="$PROJECT_DIR$/cron/removeOldAuthTokens.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +147,8 @@
       <workItem from="1662199132382" duration="3715000" />
       <workItem from="1662375729319" duration="5631000" />
       <workItem from="1662468904235" duration="7579000" />
-      <workItem from="1662715657449" duration="5216000" />
+      <workItem from="1662715657449" duration="5250000" />
+      <workItem from="1663061286923" duration="1198000" />
     </task>
     <task id="LOCAL-00001" summary="hw1">
       <created>1660203107758</created>
@@ -297,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662476638638</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="hw 9 final">
+      <created>1662721318155</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1662721318156</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,7 +328,8 @@
     <MESSAGE value="hw8 final" />
     <MESSAGE value="statics and methods" />
     <MESSAGE value="lecture" />
-    <option name="LAST_COMMIT_MESSAGE" value="lecture" />
+    <MESSAGE value="hw 9 final" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw 9 final" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
