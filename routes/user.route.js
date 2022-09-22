@@ -21,6 +21,12 @@ userRouter.get(
   userMdlwr.checkIfUserPresent(),
   userController.getUserByID );
 
+userRouter.post(
+    '/:userId/avatar',
+    // commonMdlwr.checkIfIdIsValid('userId'),
+    // userMdlwr.checkIfUserPresent(),
+    userController.uploadAvatar );
+
 userRouter.delete(
   '/:userId',
   commonMdlwr.checkIfIdIsValid('userId'),

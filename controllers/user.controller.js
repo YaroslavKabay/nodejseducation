@@ -1,5 +1,5 @@
 const { statusCodes } = require('../constants');
-const {userService} = require('../services');
+const {userService, s3Service} = require('../services');
 const {User} = require('../dataBase');
 
 module.exports={
@@ -63,4 +63,33 @@ module.exports={
       next(e);
     }
   },
+
+  uploadAvatar: async (req, res, next) => {
+    try {
+
+      const data = await s3Service.uploadPublicFile(req.files.avatar );
+      res.json(data);
+
+    } catch (e) {
+      next(e);
+    }
+  }
 };
+
+
+
+// uploadAvatar: async (req, res, next) => {
+//   try {
+//     // const { userId } = req.params;
+//     //
+//     // const data = await s3Service.uploadPublicFile(req.files.avatar, 'user', userId);
+//     const data = await s3Service.uploadPublicFile(req.files.avatar );
+//     //
+//     // await User.updateOne({ _id: userId }, { avatar: data.Location });
+//
+//
+//     res.json(data);
+//   } catch (e) {
+//     next(e);
+//   }
+// }

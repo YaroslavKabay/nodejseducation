@@ -1,6 +1,7 @@
 module.exports = {
   actionTokenService: require('./actionToken.service'),
   authService: require('./auth.service'),
+  s3Service: require('./s3.service'),
   tokenService: require('./token.service'),
   userService: require('./user.service'),
   carService: require('./car.service'),

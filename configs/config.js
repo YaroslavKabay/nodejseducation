@@ -14,6 +14,11 @@ module.exports = {
 
   FRONTEND_URL: process.env.FRONTEND_URL || 'example.com',
 
-  ACTION_TOKEN_SECRET: process.env.ACTION_TOKEN_SECRET || 'A_T_S'
+  ACTION_TOKEN_SECRET: process.env.ACTION_TOKEN_SECRET || 'A_T_S',
+
+  S3_BUCKET_NAME: process.env.S3_BUCKET_NAME,
+  S3_BUCKET_REGION: process.env.S3_BUCKET_REGION,
+  S3_ACCESS_KEY: process.env.S3_ACCESS_KEY,
+  S3_SECRET_KEY: process.env.S3_SECRET_KEY,
 
 };
