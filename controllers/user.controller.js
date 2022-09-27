@@ -66,8 +66,11 @@ module.exports={
 
   uploadAvatar: async (req, res, next) => {
     try {
+      const { userId } = req.params;
 
-      const data = await s3Service.uploadPublicFile(req.files.avatar );
+      const data = await s3Service.uploadPublicFile(req.files.avatar, 'user', userId);
+      await User.updateOne({ _id: userId }, { avatar: data.Location });
+
       res.json(data);
 
     } catch (e) {
@@ -75,8 +78,6 @@ module.exports={
     }
   }
 };
-
-
 
 // uploadAvatar: async (req, res, next) => {
 //   try {

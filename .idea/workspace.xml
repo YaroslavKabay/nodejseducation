@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91c58b8f-cc94-4a45-8394-98d7cb0b332f" name="Changes" comment="hw 9 final">
-      <change afterPath="$PROJECT_DIR$/services/s3.service.js" afterDir="false" />
+    <list default="true" id="91c58b8f-cc94-4a45-8394-98d7cb0b332f" name="Changes" comment="hw10 bucket bug">
+      <change afterPath="$PROJECT_DIR$/constants/files.constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/file.middleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/configs/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/constants/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/dataBase/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/user.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/s3.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/s3.service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +77,7 @@
       <recent name="$PROJECT_DIR$/environment" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start:prod">
+  <component name="RunManager" selected="npm.start:dev">
     <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -120,8 +120,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start:prod" />
         <item itemvalue="npm.start:dev" />
+        <item itemvalue="npm.start:prod" />
         <item itemvalue="npm.start:local" />
         <item itemvalue="npm.lint" />
       </list>
@@ -157,7 +157,9 @@
       <workItem from="1662468904235" duration="7579000" />
       <workItem from="1662715657449" duration="5250000" />
       <workItem from="1663061286923" duration="10381000" />
-      <workItem from="1663794613025" duration="1863000" />
+      <workItem from="1663794613025" duration="2061000" />
+      <workItem from="1664265256925" duration="572000" />
+      <workItem from="1664268468011" duration="4327000" />
     </task>
     <task id="LOCAL-00001" summary="hw1">
       <created>1660203107758</created>
@@ -313,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663072675055</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="hw10 bucket bug">
+      <created>1663838591541</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1663838591541</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,7 +354,8 @@
     <MESSAGE value="statics and methods" />
     <MESSAGE value="lecture" />
     <MESSAGE value="hw 9 final" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw 9 final" />
+    <MESSAGE value="hw10 bucket bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw10 bucket bug" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
