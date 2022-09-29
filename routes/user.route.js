@@ -28,6 +28,19 @@ userRouter.post(
     userMdlwr.checkIfUserPresent(),
     userController.uploadAvatar );
 
+userRouter.get(
+    '/:userId/avatar',
+    commonMdlwr.checkIfIdIsValid('userId'),
+    userMdlwr.checkIfUserPresent(),
+    userController.getImages );
+
+userRouter.delete(
+    '/:userId/avatar/:imageId',
+    commonMdlwr.checkIfIdIsValid('userId'),
+    commonMdlwr.checkIfIdIsValid('imageId'),
+    userMdlwr.checkIfUserPresent(),
+    userController.deleteImages );
+
 userRouter.delete(
   '/:userId',
   commonMdlwr.checkIfIdIsValid('userId'),

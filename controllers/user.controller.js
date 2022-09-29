@@ -1,6 +1,7 @@
 const { statusCodes } = require('../constants');
-const {userService, s3Service} = require('../services');
+const {userService, s3Service, imageService} = require('../services');
 const {User} = require('../dataBase');
+const {ApiError} = require('../errors');
 
 module.exports={
 
@@ -69,6 +70,12 @@ module.exports={
       const { userId } = req.params;
 
       const data = await s3Service.uploadPublicFile(req.files.avatar, 'user', userId);
+
+      await imageService.savePhotoInfo({
+        image: data.Location,
+        user: userId,
+      });
+
       await User.updateOne({ _id: userId }, { avatar: data.Location });
 
       res.json(data);
@@ -76,21 +83,50 @@ module.exports={
     } catch (e) {
       next(e);
     }
-  }
-};
+  },
 
-// uploadAvatar: async (req, res, next) => {
-//   try {
-//     // const { userId } = req.params;
-//     //
-//     // const data = await s3Service.uploadPublicFile(req.files.avatar, 'user', userId);
-//     const data = await s3Service.uploadPublicFile(req.files.avatar );
-//     //
-//     // await User.updateOne({ _id: userId }, { avatar: data.Location });
-//
-//
-//     res.json(data);
-//   } catch (e) {
-//     next(e);
-//   }
-// }
+  getImages: async (req, res, next) => {
+    try {
+      const { userId } = req.params;
+
+      const images = await imageService.getByUserId(userId);
+
+      res.json(images);
+    } catch (e) {
+      next(e);
+    }
+  },
+
+  deleteImages: async (req, res, next) => {
+    try {
+      const { imageId, userId } = req.params;
+      const { avatar } = req.user;
+
+      const imageInfo = await imageService.getById(imageId);
+
+      if (!imageInfo) {
+        return next(new ApiError('Image not found', statusCodes.BAD_REQUEST));
+      }
+
+      if (avatar === imageInfo.image) {
+        const oldAvatar = await imageService.getByUserIdPreviousAvatar(userId);
+
+        if (oldAvatar[0]) {
+          await User.updateOne({ _id: userId }, { avatar: oldAvatar.image });
+        } else {
+          await User.updateOne({ _id: userId }, { avatar: '' });
+        }
+      }
+
+      await Promise.all([
+        s3Service.deleteFile(imageInfo.image),
+        imageService.deleteImage({ _id: imageId }),
+      ]);
+
+
+      res.json();
+    } catch (e) {
+      next(e);
+    }
+  },
+};

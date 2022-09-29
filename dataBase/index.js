@@ -3,5 +3,6 @@ module.exports = {
   Car: require('./Car'),
   User: require('./User'),
   ActionTokens: require('./ActionTokens'),
-  PreviousPassword: require('./PreviousPassword')
+  PreviousPassword: require('./PreviousPassword'),
+  Image: require('./Image')
 };

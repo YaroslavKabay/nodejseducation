@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91c58b8f-cc94-4a45-8394-98d7cb0b332f" name="Changes" comment="hw10 bucket bug">
-      <change afterPath="$PROJECT_DIR$/constants/files.constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middlewares/file.middleware.js" afterDir="false" />
+    <list default="true" id="91c58b8f-cc94-4a45-8394-98d7cb0b332f" name="Changes" comment="hw10 lecture">
+      <change afterPath="$PROJECT_DIR$/dataBase/Image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/image.service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/constants/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/configs/config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dataBase/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/user.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/services/s3.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/s3.service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -159,7 +159,9 @@
       <workItem from="1663061286923" duration="10381000" />
       <workItem from="1663794613025" duration="2061000" />
       <workItem from="1664265256925" duration="572000" />
-      <workItem from="1664268468011" duration="4327000" />
+      <workItem from="1664268468011" duration="4412000" />
+      <workItem from="1664281731073" duration="5382000" />
+      <workItem from="1664462217577" duration="2128000" />
     </task>
     <task id="LOCAL-00001" summary="hw1">
       <created>1660203107758</created>
@@ -322,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663838591541</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="hw10 lecture">
+      <created>1664274572110</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1664274572110</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,7 +364,8 @@
     <MESSAGE value="lecture" />
     <MESSAGE value="hw 9 final" />
     <MESSAGE value="hw10 bucket bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw10 bucket bug" />
+    <MESSAGE value="hw10 lecture" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw10 lecture" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
