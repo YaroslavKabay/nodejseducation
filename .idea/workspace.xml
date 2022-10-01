@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91c58b8f-cc94-4a45-8394-98d7cb0b332f" name="Changes" comment="hw11 lecture p1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="91c58b8f-cc94-4a45-8394-98d7cb0b332f" name="Changes" comment="hw11 lecture" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -158,7 +154,7 @@
       <workItem from="1664268468011" duration="4412000" />
       <workItem from="1664281731073" duration="5382000" />
       <workItem from="1664462217577" duration="5429000" />
-      <workItem from="1664532214448" duration="4924000" />
+      <workItem from="1664532214448" duration="4953000" />
     </task>
     <task id="LOCAL-00001" summary="hw1">
       <created>1660203107758</created>
@@ -342,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664468161026</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="hw11 lecture">
+      <created>1664541924843</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1664541924844</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,7 +381,8 @@
     <MESSAGE value="hw10 lecture" />
     <MESSAGE value="hw10 final" />
     <MESSAGE value="hw11 lecture p1" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw11 lecture p1" />
+    <MESSAGE value="hw11 lecture" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw11 lecture" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
