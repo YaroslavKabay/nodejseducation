@@ -4,5 +4,6 @@ module.exports = {
   tokenTypeEnum: require('./tokenType.enum'),
   statusCodes: require('./statusCode.enum'),
   emailActionEnum: require('./emailAction.enum'),
-  fileConstants: require('./files.constants')
+  fileConstants: require('./files.constants'),
+  smsActionEnum: require('./smsAction.enum'),
 };

@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91c58b8f-cc94-4a45-8394-98d7cb0b332f" name="Changes" comment="hw11 lecture" />
+    <list default="true" id="91c58b8f-cc94-4a45-8394-98d7cb0b332f" name="Changes" comment="hw11 lecture">
+      <change afterPath="$PROJECT_DIR$/constants/smsAction.enum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helpers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helpers/smsTemplate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/sms.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/configs/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/constants/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants/regex.enum.js" beforeDir="false" afterPath="$PROJECT_DIR$/constants/regex.enum.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/dataBase/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validators/user.validators.js" beforeDir="false" afterPath="$PROJECT_DIR$/validators/user.validators.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,15 +25,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="hw10_s3" />
+        <entry key="$PROJECT_DIR$" value="hw11_socket" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -66,6 +80,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/helpers" />
       <recent name="$PROJECT_DIR$/environment" />
     </key>
   </component>
@@ -155,6 +170,7 @@
       <workItem from="1664281731073" duration="5382000" />
       <workItem from="1664462217577" duration="5429000" />
       <workItem from="1664532214448" duration="4953000" />
+      <workItem from="1664619640208" duration="6010000" />
     </task>
     <task id="LOCAL-00001" summary="hw1">
       <created>1660203107758</created>
@@ -345,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664541924844</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="hw11 lecture">
+      <created>1664619682050</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1664619682051</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,20 +1,22 @@
-const { statusCodes: { NO_CONTENT }, emailActionEnum, tokenTypeEnum, constant} = require('../constants');
+const { statusCodes: { NO_CONTENT }, emailActionEnum, tokenTypeEnum, constant, smsActionEnum} = require('../constants');
 const {FRONTEND_URL} = require('../configs/config');
 const {
-  authService,
-  tokenService,
-  emailService,
-  actionTokenService,
-  userService,
-  previousPasswordService
+    authService,
+    tokenService,
+    emailService,
+    actionTokenService,
+    userService,
+    previousPasswordService,
+    smsService,
 } = require('../services');
+const {smsTemplate} = require('../helpers');
 
 
 module.exports = {
     login: async (req, res, next) => {
         try {
             const { password, email } = req.body;
-            const { _id, name } = req.user;
+            const { _id, name, phone } = req.user;
 
             await req.user.checkIsPasswordSame(password);
 
@@ -22,7 +24,9 @@ module.exports = {
 
             await authService.saveTokens({ ...authTokens, user: _id });
 
-            await emailService.sendEmail(email, emailActionEnum.WELCOME, {userName: name});
+            // await emailService.sendEmail(email, emailActionEnum.WELCOME, {userName: name});
+            //
+            // await smsService.sendSMS(phone, smsTemplate[smsActionEnum.LOGIN](name));
 
             res.json({
                 ...authTokens,
