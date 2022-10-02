@@ -4,6 +4,7 @@ const http = require('http');
 const express = require('express');
 const socketIo = require('socket.io');
 const fileUpload = require('express-fileupload');
+const swaggerUi = require('swagger-ui-express');
 
 const mongoose = require('mongoose');
 
@@ -11,6 +12,8 @@ const {authRoute, userRoute, carRoute} = require('./routes');
 const { PORT, MONGO_URL, NODE_ENV} = require('./configs/config');
 const runCronJobs = require('./cron');
 const { mainErrorHandler } = require('./errors');
+const swaggerDocument = require('./swagger.json');
+
 
 const app = express();
 const server = http.createServer(app);
@@ -64,6 +67,8 @@ app.get('/', (req,res) => {
 app.use('/auth', authRoute);
 app.use('/users', userRoute);
 app.use('/cars', carRoute);
+app.get('/health', (req, res) => res.json('OK'));
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 
 app.use('*', (req, res, next)=>{
