@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91c58b8f-cc94-4a45-8394-98d7cb0b332f" name="Changes" comment="hw11 lecture">
-      <change afterPath="$PROJECT_DIR$/constants/smsAction.enum.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helpers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helpers/smsTemplate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/sms.service.js" afterDir="false" />
+    <list default="true" id="91c58b8f-cc94-4a45-8394-98d7cb0b332f" name="Changes" comment="hw12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/configs/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/constants/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants/regex.enum.js" beforeDir="false" afterPath="$PROJECT_DIR$/constants/regex.enum.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/dataBase/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validators/user.validators.js" beforeDir="false" afterPath="$PROJECT_DIR$/validators/user.validators.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +158,8 @@
       <workItem from="1664281731073" duration="5382000" />
       <workItem from="1664462217577" duration="5429000" />
       <workItem from="1664532214448" duration="4953000" />
-      <workItem from="1664619640208" duration="6010000" />
+      <workItem from="1664619640208" duration="6175000" />
+      <workItem from="1664702123543" duration="543000" />
     </task>
     <task id="LOCAL-00001" summary="hw1">
       <created>1660203107758</created>
@@ -368,7 +357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664619682051</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="hw12">
+      <created>1664626109493</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1664626109494</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,7 +401,8 @@
     <MESSAGE value="hw10 final" />
     <MESSAGE value="hw11 lecture p1" />
     <MESSAGE value="hw11 lecture" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw11 lecture" />
+    <MESSAGE value="hw12" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw12" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
