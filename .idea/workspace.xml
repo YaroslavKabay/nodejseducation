@@ -115,10 +115,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start:dev" />
         <item itemvalue="npm.start:prod" />
         <item itemvalue="npm.start:local" />
+        <item itemvalue="npm.start:dev" />
         <item itemvalue="npm.lint" />
+        <item itemvalue="npm.start:dev" />
       </list>
     </recent_temporary>
   </component>
