@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91c58b8f-cc94-4a45-8394-98d7cb0b332f" name="Changes" comment="hw13 node start">
+    <list default="true" id="91c58b8f-cc94-4a45-8394-98d7cb0b332f" name="Changes" comment="hw12 node start">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -162,6 +162,15 @@
       <workItem from="1664619640208" duration="6175000" />
       <workItem from="1664702123543" duration="4927000" />
       <workItem from="1664819433812" duration="1191000" />
+      <workItem from="1664873934812" duration="17000" />
+      <workItem from="1664875469054" duration="46000" />
+      <workItem from="1664876076412" duration="5000" />
+      <workItem from="1664977006837" duration="10000" />
+      <workItem from="1664980123243" duration="11000" />
+      <workItem from="1664980770814" duration="8000" />
+      <workItem from="1665476549980" duration="35000" />
+      <workItem from="1665753413689" duration="601000" />
+      <workItem from="1665840393073" duration="45000" />
     </task>
     <task id="LOCAL-00001" summary="hw1">
       <created>1660203107758</created>
