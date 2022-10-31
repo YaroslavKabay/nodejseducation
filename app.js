@@ -32,6 +32,3 @@ app.listen(PORT, () =>{
   console.log('App listen', PORT);
   mongoose.connect(MONGO_URL);
 });
-
-
-
