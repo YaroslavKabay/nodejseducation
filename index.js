@@ -28,7 +28,7 @@
 
 //ADITIONAL
 const fs = require('fs/promises');
-const path = require('path');
+const path = require('path'); //потрібен шоб замінити слеші, вінда має зворотні слеші тому треба
 
 const reader = async (folderPath) => {
     const files = await fs.readdir(folderPath);

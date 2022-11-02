@@ -1,10 +1,10 @@
-function fn(name,age) {
-    return {
-        name,
-        age,
-        sayHello: () => {
-            console.log(`hello my name is ${name} and my age is ${age} `);
-        }
-    }
-}
-fn('lallal', 24)
+// нода дає велику продуктивність використовуючи мало заліза
+
+const module1 = require('./module1.js'); // як тільки нода бачить цей файл - вона одразу його запускає і там виконається все всередині нього(будь уважним)
+const fs = require('./file'); //виконає всьо в файл файлі при запуску аппжс
+// якщо файли реквайритимуть одне одного то виникне циклічна залежність, тому краще створювати 3 файл якшо треба таке робити
+
+const user = module1.createUser('anna',19)
+
+// user.sayHello()
+
