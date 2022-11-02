@@ -8,17 +8,26 @@ const userRoute = require('./routes/user.route')
 
 
 const app = express();
-app.use(express.json());
-app.use(express.urlencoded({extended: true}));
+app.use(express.json()); // потрібно шоб навчити експрес читати джейсони (парсити)
+app.use(express.urlencoded({extended: true})); // розширює можливості парсингу(просто включає бібліотеку qs)
 
-app.get('/', (req,res) => {
+// !! ці двоє експресджейсон і юрл енкодед обовязкові !!
+
+app.get('/', (req, res) => { // req -  data sent from user, res - data sent to user
     console.log('Request processed')
+    console.log(req);
     res.json("hello")
-})
+}) // from (req ... to hello)}  - it is controller
 
 app.use('/users', userRoute);
+
+
+app.listen(3000, () =>{
+    console.log('App listen 3000')
+});
+
 //
-// app.get('/users', userController.getAllUsers)
+// app.get('/users', userController.getAllUsers)  // get, post, put, delete - http methods
 //
 // app.post('/users', userController.createUser );
 //
@@ -28,10 +37,10 @@ app.use('/users', userRoute);
 //
 // app.put('/users/:userId', userController.updateUserByID );
 
+// const {userId} = req.params - бере інфу з динамічних змінних типу users/:userId
+//res.json(users[userId])
 
-app.listen(3000, () =>{
-    console.log('App listen 3000')
-});
+//const {age, name} = req.body - бере інфу з баді (баді прописується на стороні фронта) . Використовується на пост, пут і деліт
 
 
 
