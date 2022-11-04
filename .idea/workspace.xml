@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="91c58b8f-cc94-4a45-8394-98d7cb0b332f" name="Changes" comment="lecture">
+    <list default="true" id="91c58b8f-cc94-4a45-8394-98d7cb0b332f" name="Changes" comment="test">
+      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configs/configs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/user.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/user.middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +35,6 @@
     <setting file="file://$PROJECT_DIR$/app.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/dataBase/index.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/dataBase/users.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/environments/production.env" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/services/file.service.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -43,12 +48,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Git.Branch.Popup.ShowAllRemotes": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -66,6 +73,9 @@
       <workItem from="1660570737896" duration="2922000" />
       <workItem from="1660825456954" duration="3480000" />
       <workItem from="1667405342121" duration="4104000" />
+      <workItem from="1667558444248" duration="132000" />
+      <workItem from="1667559004968" duration="1811000" />
+      <workItem from="1667601523727" duration="2944000" />
     </task>
     <task id="LOCAL-00001" summary="hw1">
       <created>1660203107758</created>
@@ -109,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660574010862</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="test">
+      <created>1667556497100</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667556497101</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +146,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hw1" />
     <MESSAGE value="hw2" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw2" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
 </project>

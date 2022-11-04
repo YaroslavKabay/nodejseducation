@@ -1,10 +1,13 @@
 const express = require('express');
-const users = require('./dataBase');
+require('dotenv').config()
 
-const fileService = require('./services/file.service');
-
-const userController = require('./controllers/user.controller')
+// const users = require('./dataBase');
+//
+// const fileService = require('./services/file.service');
+//
+// const userController = require('./controllers/user.controller')
 const userRoute = require('./routes/user.route')
+const { PORT } = require('./configs/configs')
 
 
 const app = express();
@@ -22,8 +25,8 @@ app.get('/', (req, res) => { // req -  data sent from user, res - data sent to u
 app.use('/users', userRoute);
 
 
-app.listen(3000, () =>{
-    console.log('App listen 3000')
+app.listen(PORT, () => {
+    console.log('App listen', PORT)
 });
 
 //
@@ -42,8 +45,8 @@ app.listen(3000, () =>{
 
 //const {age, name} = req.body - бере інфу з баді (баді прописується на стороні фронта) . Використовується на пост, пут і деліт
 
-//test
-
+//cmnd + opt + l порівняє все
+// .env.example is need щоб показати як виглядати має звичайний енв, і екзампл заливається на гіт
 
 
 

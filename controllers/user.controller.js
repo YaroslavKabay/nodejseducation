@@ -1,6 +1,6 @@
 const fileService = require("../services/file.service");
 module.exports={
-    getAllUsers:  async (req,res) => {
+    getAllUsers:  async (req,res) => { // називається метод (getallusers)
         const usersFromService = await fileService.getUsers();
         res.json(usersFromService);
     },

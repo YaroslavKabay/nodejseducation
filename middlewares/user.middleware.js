@@ -11,6 +11,6 @@ module.exports = {
             res.status(400).json('Wrong user name');
             return;
         }
-        next();
+        next(); // цей параметр просто включає  наступну функцію, просто преходить до наступного обробника
     }
 }
