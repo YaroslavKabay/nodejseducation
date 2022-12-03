@@ -1,9 +1,9 @@
 const Joi = require('joi');
 
-const yearValidator = Joi.number().integer()
+const yearValidator = Joi.number().integer() // інтеджер тільки цілі числа, не дробові, в реджекс вставляєм валідатори(регулярки)
   .min(1950)
   .max(new Date().getFullYear());
-const madelValidator = Joi.string().alphanum()
+const madelValidator = Joi.string().alphanum() //альфанам цифри-букви
   .min(2)
   .max(35)
   .trim();
